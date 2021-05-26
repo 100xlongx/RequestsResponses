@@ -35,9 +35,8 @@ namespace RequestsResponses.Controllers
         [Route("/query")]
         public IActionResult GetQuery()
         {
-            var test = Request.QueryString.ToString();
-
-            return base.Ok(test);
+            var query = Request.QueryString.ToString();
+            return base.Ok(query);
         }
     }
 }
